@@ -3,6 +3,8 @@ from PyQt4.QtGui import *
 
 import sys
 
+from NewsFeedRSS import *
+
 
 class MainWindow(QMainWindow):
 
@@ -18,8 +20,98 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("Python Breaking News Feed")
         self.resize(500,300)
 
-        self.initial_layout()
+        #news
 
+        self.allNews = None
+        self.bbcNews = None
+        self.skyNews = None
+        self.yahooNews = None
+
+        self.initial_layout()
+    def getAllNews(self):
+        feed = NewsFeedRSS()
+        feed.getRssFeedData
+
+        self.newsListView.clear()
+
+        #all news
+        allNews = []
+
+        #get bbc news
+
+        bbcResults = feed.getRssFeedData(feed.bbcNewsLink)
+        skyResults = feed.getRssFeedData(feed.skyNewsLink)
+        yahooResults = feed.getRssFeedData(feed.yahooNewsLink)
+
+        for each in bbcResults:
+            old = each[0]
+            each[0] = "BBC - " + old
+            allNews.append(each)
+        for each in skyResults:
+            old = each[0]
+            each[0] = "SKY - " + old
+            allNews.append(each)
+        for each in yahooResults:
+            old = each[0]
+            each[0] = "YHO - " + old
+            allNews.append(each)
+
+
+        allNewsResults = sorted(allNews)
+
+        for each in allNews:
+            self.newsListView.addItem(each[0])
+
+        self.allNews = allNewsResults
+        
+    def getBbcNews(self):
+        #get the bbc news results
+        feed = NewsFeedRSS()
+        results = feed.getRssFeedData(feed.bbcNewsLink)
+        #clear the news list view widget
+        self.newsListView.clear()
+        for news in results:
+            
+            self.newsListView.addItem(news[0])
+
+        self.bbcNews = results
+
+    def getSkyNews(self):
+        
+        feed = NewsFeedRSS()
+        results = feed.getRssFeedData(feed.skyNewsLink)
+        #clear the news list view widget
+        self.newsListView.clear()
+        for news in results:
+            
+            self.newsListView.addItem(news[0])
+
+        self.skyNews = results
+                    
+    def getYahooNews(self):
+        feed = NewsFeedRSS()
+        results = feed.getRssFeedData(feed.yahooNewsLink)
+        #clear the news list view widget
+        self.newsListView.clear()
+        for news in results:
+            self.newsListView.addItem(news[0])
+
+
+        self.yahooNews = results
+
+    def searchResults(self):
+        currentItems = []
+        query = self.searchField.text()
+        if query != "":
+            self.newsListView.clear()
+            for each in self.allNews:
+                if query.lower() in each[0].lower():
+                    self.newsListView.addItem(each[0])
+                elif query in each[1]:
+                    self.newsListView.addItem(each[0])
+                elif query in each[2]:
+                    self.newsListView.addItem(each[0])
+            
     def initial_layout(self):
 
         #widgets
@@ -27,6 +119,8 @@ class MainWindow(QMainWindow):
         self.skyNewsPushButton = QPushButton("Sky News")
         self.bbcNewsPushButton = QPushButton("BBC News")
         self.yahooNewsPushButton = QPushButton("Yahoo News")
+
+        self.searchField = QLineEdit()
 
         #news feed button layout
         
@@ -38,7 +132,7 @@ class MainWindow(QMainWindow):
 
         #allNews list view
 
-        self.allNewsListView = QListView()
+        self.newsListView = QListWidget()
 
         #allNews widget
         
@@ -50,13 +144,24 @@ class MainWindow(QMainWindow):
         #mainLayout
         self.mainLayout = QVBoxLayout()
         self.mainLayout.addWidget(self.newsFeedButtonWidget)
-        self.mainLayout.addWidget(self.allNewsListView)
+        self.mainLayout.addWidget(self.newsListView)
+        self.mainLayout.addWidget(self.searchField)
 
         #mainWidget
         self.mainWidget = QWidget()
         self.mainWidget.setLayout(self.mainLayout)
         
         self.setCentralWidget(self.mainWidget)
+
+        #set button connections
+
+        self.allNewsPushButton.clicked.connect(self.getAllNews)
+        self.skyNewsPushButton.clicked.connect(self.getSkyNews)
+        self.bbcNewsPushButton.clicked.connect(self.getBbcNews)
+        self.yahooNewsPushButton.clicked.connect(self.getYahooNews)
+
+        self.searchField.textChanged.connect(self.searchResults)
+        
 if __name__ == "__main__":
 
     app = QApplication(sys.argv)

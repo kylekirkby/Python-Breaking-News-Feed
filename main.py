@@ -5,11 +5,11 @@ import urllib.request
 feed = urllib.request.urlopen("http://feeds.bbci.co.uk/news/world/rss.xml")
 feedData = feed.read()
 
-with open("feed2.xml",mode="w") as feedFile:
+with open("feedNe2w.xml",mode="w") as feedFile:
     for line in feedData.decode("utf-8"):
         feedFile.write(line)
 
-tree = etree.parse("feed2.xml")
+#tree = etree.parse("feedNew.xml")
 root = etree.fromstring(feedData.decode("utf-8"))
 
 item = root.findall('channel/item')

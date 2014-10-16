@@ -7,7 +7,7 @@
     <link>http://www.bbc.co.uk/news/world/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
     <description>The latest stories from the World section of the BBC News web site.</description>  
     <language>en-gb</language>  
-    <lastBuildDate>Thu, 16 Oct 2014 09:17:05 GMT</lastBuildDate>  
+    <lastBuildDate>Thu, 16 Oct 2014 10:28:42 GMT</lastBuildDate>  
     <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
     <image> 
       <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
@@ -37,13 +37,13 @@
       <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/78253000/jpg/_78253156_78252771.jpg"/> 
     </item>  
     <item> 
-      <title>Channel apologises for 'sexist' quiz</title>  
-      <description>Australia's Channel 10 apologises for a "sexist" question on the Family Feud quiz asking contestants to "name a woman's job".</description>  
-      <link>http://www.bbc.co.uk/news/world-australia-29639887#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-australia-29639887</guid>  
-      <pubDate>Thu, 16 Oct 2014 07:00:55 GMT</pubDate>  
-      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/78252000/jpg/_78252595_womancleaning.jpg"/>  
-      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/78252000/jpg/_78252596_womancleaning.jpg"/> 
+      <title>Share prices continue to slide</title>  
+      <description>Share prices across Europe tumbled on Thursday amid fears of a global economic slowdown and the impact of the Ebola crisis.</description>  
+      <link>http://www.bbc.co.uk/news/business-29644214#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-29644214</guid>  
+      <pubDate>Thu, 16 Oct 2014 10:26:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/78280000/jpg/_78280633_78260823.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/78280000/jpg/_78280634_78260823.jpg"/> 
     </item>  
     <item> 
       <title>Afghan forces arrest Haqqani leaders</title>  
@@ -62,6 +62,15 @@
       <pubDate>Thu, 16 Oct 2014 09:00:38 GMT</pubDate>  
       <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/78255000/jpg/_78255090_albandboyap.jpg"/>  
       <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/78255000/jpg/_78255091_albandboyap.jpg"/> 
+    </item>  
+    <item> 
+      <title>Channel apologises for 'sexist' quiz</title>  
+      <description>Australia's Channel 10 apologises for a "sexist" question on the Family Feud quiz asking contestants to "name a woman's job".</description>  
+      <link>http://www.bbc.co.uk/news/world-australia-29639887#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-australia-29639887</guid>  
+      <pubDate>Thu, 16 Oct 2014 07:00:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/78252000/jpg/_78252595_womancleaning.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/78252000/jpg/_78252596_womancleaning.jpg"/> 
     </item>  
     <item> 
       <title>HK 'ready for talks' with protesters</title>  
@@ -116,15 +125,6 @@
       <pubDate>Wed, 15 Oct 2014 23:20:34 GMT</pubDate>  
       <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/78251000/jpg/_78251675_pericia_em_informatica_2-1.jpg"/>  
       <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/78251000/jpg/_78251676_pericia_em_informatica_2-1.jpg"/> 
-    </item>  
-    <item> 
-      <title>Netflix shares plunge on slow growth</title>  
-      <description>US shares of Netflix, the world's largest video streaming service, plunged on Wednesday after it reported fewer subscribers than forecast.</description>  
-      <link>http://www.bbc.co.uk/news/business-29639591#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-29639591</guid>  
-      <pubDate>Thu, 16 Oct 2014 00:56:36 GMT</pubDate>  
-      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/78251000/jpg/_78251959_netflix.jpg"/>  
-      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/78251000/jpg/_78251960_netflix.jpg"/> 
     </item>  
     <item> 
       <title>VIDEO: Michelle Obama dances with turnip</title>  
@@ -218,10 +218,10 @@
     </item>  
     <item> 
       <title>Putin flies in for Serb army parade</title>  
-      <description>Vladimir Putin is to be guest of honour at a Serbian military parade in Belgrade loaded with symbolism as he accuses the US of "hostility" towards Russia.</description>  
+      <description>Vladimir Putin flies into Belgrade where he is to be guest of honour at a Serbian military parade, held amid continuing friction with the West.</description>  
       <link>http://www.bbc.co.uk/news/world-europe-29641642#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
       <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-29641642</guid>  
-      <pubDate>Thu, 16 Oct 2014 09:19:00 GMT</pubDate>  
+      <pubDate>Thu, 16 Oct 2014 10:27:35 GMT</pubDate>  
       <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/78254000/jpg/_78254497_78254488.jpg"/>  
       <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/78254000/jpg/_78254498_78254488.jpg"/> 
     </item>  
@@ -271,15 +271,6 @@
       <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/78254000/jpg/_78254432_78236368.jpg"/> 
     </item>  
     <item> 
-      <title>FTSE falls as jitters take hold</title>  
-      <description>Hopes for a rebound on the FTSE 100 after Wednesday's shares rout have faded, after an initial rally petered out.</description>  
-      <link>http://www.bbc.co.uk/news/business-29640507#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-29640507</guid>  
-      <pubDate>Thu, 16 Oct 2014 08:26:51 GMT</pubDate>  
-      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/78254000/jpg/_78254451_013489818-1.jpg"/>  
-      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/78254000/jpg/_78254452_013489818-1.jpg"/> 
-    </item>  
-    <item> 
       <title>Buffett sells 245m Tesco shares</title>  
       <description>Billionaire investor Warren Buffett, who described his Tesco investment as a "huge mistake", offloads 245 million shares in the grocer.</description>  
       <link>http://www.bbc.co.uk/news/business-29640117#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
@@ -296,6 +287,15 @@
       <pubDate>Thu, 16 Oct 2014 05:59:38 GMT</pubDate>  
       <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/78252000/jpg/_78252719_hi024337309.jpg"/>  
       <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/78252000/jpg/_78252720_hi024337309.jpg"/> 
+    </item>  
+    <item> 
+      <title>Netflix shares plunge on slow growth</title>  
+      <description>US shares of Netflix, the world's largest video streaming service, plunged on Wednesday after it reported fewer subscribers than forecast.</description>  
+      <link>http://www.bbc.co.uk/news/business-29639591#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-29639591</guid>  
+      <pubDate>Thu, 16 Oct 2014 00:56:36 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/78251000/jpg/_78251959_netflix.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/78251000/jpg/_78251960_netflix.jpg"/> 
     </item>  
     <item> 
       <title>Players 'don't worry about prices'</title>  
@@ -343,13 +343,13 @@
       <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/78252000/jpg/_78252375_185443782.jpg"/> 
     </item>  
     <item> 
-      <title>O'Dowd 'to adapt Moone Boy for US'</title>  
-      <description>Comic actor Chris O'Dowd is to adapt his Sky 1 sitcom for US TV network ABC.</description>  
-      <link>http://www.bbc.co.uk/news/entertainment-arts-29642614#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-29642614</guid>  
-      <pubDate>Thu, 16 Oct 2014 09:18:44 GMT</pubDate>  
-      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/78256000/jpg/_78256052_78255540.jpg"/>  
-      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/78256000/jpg/_78256053_78255540.jpg"/> 
+      <title>Actress to meet police over abuse</title>  
+      <description>Samantha Morton is to meet police over claims she suffered sexual abuse by care home workers in Nottinghamshire.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-nottinghamshire-29643795#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-nottinghamshire-29643795</guid>  
+      <pubDate>Thu, 16 Oct 2014 10:18:29 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/78267000/jpg/_78267608_hi023878693.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/78267000/jpg/_78267609_hi023878693.jpg"/> 
     </item>  
     <item> 
       <title>VIDEO: Oscar Pistorius sentencing</title>  

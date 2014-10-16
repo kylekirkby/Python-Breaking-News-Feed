@@ -12,7 +12,7 @@ class NewsFeedRSS():
         self.skyNewsLink = "http://feeds.skynews.com/feeds/rss/world.xml"
         self.yahooNewsLink = "http://news.yahoo.com/rss/world"
 
-    def getRssFeedData(rssLink):
+    def getRssFeedData(self,rssLink):
         
         feed = urllib.request.urlopen(rssLink)
         feedData = feed.read()
@@ -29,7 +29,7 @@ class NewsFeedRSS():
             for line in feedData.decode("utf-8"):
                 feedFile.write(line)
 
-        tree = etree.parse("feed2.xml")
+        #tree = etree.parse(fileName)
         root = etree.fromstring(feedData.decode("utf-8"))
 
         item = root.findall('channel/item')
