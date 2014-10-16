@@ -26,6 +26,7 @@ class MainWindow(QMainWindow):
         self.bbcNews = None
         self.skyNews = None
         self.yahooNews = None
+        self.rtNews = None
 
         self.initial_layout()
     def getAllNews(self):
@@ -98,6 +99,16 @@ class MainWindow(QMainWindow):
 
 
         self.yahooNews = results
+    def getRtNews(self):
+        feed = NewsFeedRSS()
+        results = feed.getRTNewsFeed()
+        #clear the news list view widget
+        self.newsListView.clear()
+        for news in results:
+            self.newsListView.addItem(news[0])
+
+
+        self.rtNews = results
 
     def searchResults(self):
         currentItems = []
@@ -111,6 +122,11 @@ class MainWindow(QMainWindow):
                     self.newsListView.addItem(each[0])
                 elif query in each[2]:
                     self.newsListView.addItem(each[0])
+    def viewNewsArticleLayout(self):
+        self.backButon = QPushButton("Back")
+
+        self.title = QLabel("News Title")
+        self.description = ""
             
     def initial_layout(self):
 
@@ -118,6 +134,7 @@ class MainWindow(QMainWindow):
         self.allNewsPushButton = QPushButton("All News")
         self.skyNewsPushButton = QPushButton("Sky News")
         self.bbcNewsPushButton = QPushButton("BBC News")
+        self.rtNewsPushButton = QPushButton("RT News")
         self.yahooNewsPushButton = QPushButton("Yahoo News")
 
         self.searchField = QLineEdit()
@@ -129,6 +146,7 @@ class MainWindow(QMainWindow):
         self.newsFeedButtonLayout.addWidget(self.skyNewsPushButton)
         self.newsFeedButtonLayout.addWidget(self.bbcNewsPushButton)
         self.newsFeedButtonLayout.addWidget(self.yahooNewsPushButton)
+        self.newsFeedButtonLayout.addWidget(self.rtNewsPushButton)
 
         #allNews list view
 
@@ -158,6 +176,7 @@ class MainWindow(QMainWindow):
         self.allNewsPushButton.clicked.connect(self.getAllNews)
         self.skyNewsPushButton.clicked.connect(self.getSkyNews)
         self.bbcNewsPushButton.clicked.connect(self.getBbcNews)
+        self.rtNewsPushButton.clicked.connect(self.getRtNews)
         self.yahooNewsPushButton.clicked.connect(self.getYahooNews)
 
         self.searchField.textChanged.connect(self.searchResults)

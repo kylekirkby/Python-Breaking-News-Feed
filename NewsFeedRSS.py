@@ -11,6 +11,7 @@ class NewsFeedRSS():
         self.bbcNewsLink = "http://feeds.bbci.co.uk/news/world/rss.xml"
         self.skyNewsLink = "http://feeds.skynews.com/feeds/rss/world.xml"
         self.yahooNewsLink = "http://news.yahoo.com/rss/world"
+        self.rtNewsLink = "http://rt.com/rss"
 
     def getRssFeedData(self,rssLink):
         
@@ -30,6 +31,37 @@ class NewsFeedRSS():
                 feedFile.write(line)
 
         #tree = etree.parse(fileName)
+        root = etree.fromstring(feedData.decode("utf-8"))
+
+        item = root.findall('channel/item')
+
+        newsFeed = []
+
+        for entry in item:
+            newEntry = []
+            #get description, url, and thumbnail
+            title = entry.findtext('title')
+            link = entry.findtext('link')
+            desc = entry.findtext('description')
+            thumb = entry.findtext('media:thumbnil url')
+            published  = entry.findtext('pubDate')
+            
+            newEntry.append(title)
+            newEntry.append(link)
+            newEntry.append(desc)
+            newEntry.append(thumb)
+            newEntry.append(published)
+
+            newsFeed.append(newEntry)
+
+        return newsFeed
+
+    def getRTNewsFeed(self):
+
+              
+        feed = urllib.request.urlopen(self.rtNewsLink)
+        feedData = feed.read()
+        
         root = etree.fromstring(feedData.decode("utf-8"))
 
         item = root.findall('channel/item')

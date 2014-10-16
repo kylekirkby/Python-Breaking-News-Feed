@@ -2,11 +2,11 @@ import xml.etree.ElementTree as etree
 import urllib.request
 
 
-feed = urllib.request.urlopen("http://feeds.bbci.co.uk/news/world/rss.xml")
+feed = urllib.request.urlopen("http://rt.com/rss/")
 feedData = feed.read()
 
 with open("feedNe2w.xml",mode="w") as feedFile:
-    for line in feedData.decode("utf-8"):
+    for line in str(feedData):
         feedFile.write(line)
 
 #tree = etree.parse("feedNew.xml")
